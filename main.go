@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"net/http"
 
 	"github.com/gin-gonic/contrib/sessions"
@@ -12,7 +11,6 @@ import (
 )
 
 func main() {
-	log.Println("Lets get started Jai Sreemannarayana")
 
 	store := sessions.NewCookieStore([]byte("secret"))
 	r := gin.Default()
