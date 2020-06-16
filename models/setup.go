@@ -8,7 +8,7 @@ import (
 )
 
 func SetupModels() *gorm.DB {
-	db, err := gorm.Open("mysql", "admin:xg97SmkXMGxlzztLRkTz@tcp(database-1.cdhqvttn2w7u.ap-south-1.rds.amazonaws.com:3306)/collection")
+	db, err := gorm.Open("mysql", "")
 
 	if err != nil {
 		log.Println("Error is", err)
@@ -18,4 +18,3 @@ func SetupModels() *gorm.DB {
 	db.AutoMigrate(&Songs{})
 	return db
 }
-
